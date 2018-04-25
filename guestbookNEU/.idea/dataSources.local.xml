@@ -10,5 +10,10 @@
       <user-name>admin</user-name>
       <introspection-schemas>GUESTBOOK:@</introspection-schemas>
     </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="d12ad6bc-571d-4851-8d7c-384439d89dff">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>admin</user-name>
+    </data-source>
   </component>
 </project>

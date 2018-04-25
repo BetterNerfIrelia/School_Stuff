@@ -87,19 +87,22 @@ Registrieren:
             <br>
             <li><a href="tabellen">Tabellen</a></li>
             <br>
-            <li><a href="mailto:schiener5@hotmail.com?Subject=Hello%20there"><img src="Mail.jpg" alt="FHV_Logo"
-                                                                                  width="50px"></a></li>
+            <li><a href="login">Login</a></li>
+            <br>
+            <li><a href="historie">Historie</a></li>
+            <br>
+            <li><a href="mailto:schiener5@hotmail.com?Subject=Hello%20there"><img src="Mail.jpg" alt="FHV_Logo" width="50px"></a></li>
+            <br>
         </ul>
     </nav>
+
 
     <article>
         <h1>Registrieren</h1>
         <p>Für neue Registrierung bitte das Formular vollständig ausfüllen!</p>
         <br>
 
-        <form id="Registrieren" name="Registrieren" class="Registrieren" action="mailto: schiener5@hotmail.com"
-              method="post"
-              enctype="text/plain">
+        <form id="Registrieren" name="Registrieren" action="/coursewebsite/ControlRegistrieren.jsp" method="post">
             Username:<br>
 
             <input type="text" name="Username" id="Username" value="">

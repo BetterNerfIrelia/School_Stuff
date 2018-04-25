@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://xmlns.jcp.org/jsf/html
+http://xmlns.jcp.org/jsf/html ">
+<f:view>
+    <h:form id="user-form">
+        <h:outputLabel for="username">User Name: </h:outputLabel>
+        <h:inputText id="username" value="#{fragebogenBean.userid}" required="true" requiredMessage="Username is required"/><br/>
+        <h:message id="m1" for="username" style="color:red"/> <p></p>
+
+        <br></br>
+
+        <h:outputLabel>Auf welchen Kurs beziehen Sie sich?</h:outputLabel>
+        <br></br>
+
+        <h:selectOneMenu id="course" value = "#{fragebogenBean.course}" required="true" requiredMessage="Course is required">
+            <f:selectItem itemValue = "" itemLabel = "Bitte auswählen" />
+            <f:selectItem itemValue = "Webapplikationen" itemLabel = "Webapplikationen" />
+            <f:selectItem itemValue = "Software-Entwicklung" itemLabel = "Software-Entwicklung" />
+            <f:selectItem itemValue = "Software-Sicherheit" itemLabel = "Software-Sicherheit" />
+        </h:selectOneMenu>
+        <h:message id="m2" for="course" style="color:red"/> <p></p>
+
+        <br></br>
+        <br></br>
+
+        <h:outputLabel>Wenn Sie sich auf den Inhalt
+            konzentrieren, wie lohnend war der Besuch der Lehrveranstaltung bisher?
+            1 bis 5, von sehr lohnend bis kaum lohnend</h:outputLabel>
+        <br></br>
+
+        <h:selectOneRadio id ="coursecontent" value = "#{fragebogenBean.coursecontent}" required="true" requiredMessage="Course Content is required">
+            <f:selectItem itemValue = "1" itemLabel = "1" />
+            <f:selectItem itemValue = "2" itemLabel = "2" />
+            <f:selectItem itemValue = "3" itemLabel = "3" />
+            <f:selectItem itemValue = "4" itemLabel = "4" />
+            <f:selectItem itemValue = "5" itemLabel = "5" />
+        </h:selectOneRadio>
+        <h:message id="m3" for="coursecontent" style="color:red"/> <p></p>
+
+        <br></br>
+
+        <h:outputLabel>Auf welchen Computer Plattformen
+            haben Sie die Übungsaufgaben gelöst?</h:outputLabel>
+        <br></br>
+
+        <h:selectManyCheckbox id ="platform" value = "#{fragebogenBean.platform}" required="true" requiredMessage="Platform is required">
+        <f:selectItem itemValue = "Windows" itemLabel = "Windows"/>
+            <f:selectItem itemValue = "Mac" itemLabel = "Mac"/>
+            <f:selectItem itemValue = "Linux" itemLabel = "Linux"/>
+            <f:selectItem itemValue = "Sonstige" itemLabel = "Sonstige"/>
+        </h:selectManyCheckbox>
+        <h:message id="m4" for="platform" style="color:red"/> <p></p>
+
+        <br></br>        <br></br>
+
+
+        <h:outputLabel>Was sollte Ihrer Meinung nach
+            beibehalten werden?</h:outputLabel>
+        <br></br>
+
+        <h:inputTextarea id ="comment" cols="30" rows="10" value="#{fragebogenBean.comment}" required="true" requiredMessage="Comment is required"/>
+        <h:message id="fr" for="comment" style="color:red"/> <p></p>
+
+        <br></br>        <br></br>
+
+
+        <h:commandButton id="submit-button" value="Submit" action="#{fragebogenBean.saveFragenbogen}"/>
+    </h:form>
+</f:view>
+</html>

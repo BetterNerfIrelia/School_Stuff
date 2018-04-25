@@ -49,7 +49,7 @@ Die Aufgabe wird in den folgenden Übungsblättern fortgesetzt.
     <meta name="keywords" content="FHV, Fachhochschule, Vorarlberg, Dornbirn, Österreich, Punktekonto, Punkte, Student, Studenten, Webapplikationen, Softwareentwicklung, Softwaresicherheit">
     <meta name="author" content="Sebastian Schiener">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;URL=/coursewebsite/cookieServlet">
+    <%--<meta http-equiv="refresh" content="0;URL=/coursewebsite/cookieServlet">--%>
 
     <title>FHV-Courses</title>
     <link rel="stylesheet" href="style.css"/>
@@ -85,10 +85,17 @@ Die Aufgabe wird in den folgenden Übungsblättern fortgesetzt.
             <br>
             <li><a href="tabellen">Tabellen</a></li>
             <br>
+            <li><a href="login">Login</a></li>
+            <br>
+            <li><a href="historie">Historie</a></li>
+            <br>
+            <li><a href="fragebogen.xhtml">Fragebogen</a></li>
+            <br>
             <li><a href="mailto:schiener5@hotmail.com?Subject=Hello%20there"><img src="Mail.jpg" alt="FHV_Logo" width="50px"></a></li>
             <br>
         </ul>
     </nav>
+
 
     <article>
         <h1>Übersicht</h1>

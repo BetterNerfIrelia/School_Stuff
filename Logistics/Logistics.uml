@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>at.fhv.ssc.Logistics</OriginalElement>
+  <nodes>
+    <node x="280.1482176360223" y="432.1538461538461">at.fhv.ssc.Logistics.Field</node>
+    <node x="363.7898686679175" y="303.0075046904315">at.fhv.ssc.Logistics.Main</node>
+    <node x="-502.6772983114445" y="-129.14634146341456">at.fhv.ssc.Logistics.Trolley</node>
+    <node x="275.954971857411" y="-131.13320825515947">at.fhv.ssc.Logistics.Product</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="at.fhv.ssc.Logistics.Trolley" target="at.fhv.ssc.Logistics.Product">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="at.fhv.ssc.Logistics.Main" target="at.fhv.ssc.Logistics.Trolley">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="at.fhv.ssc.Logistics.Main" target="at.fhv.ssc.Logistics.Field">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="at.fhv.ssc.Logistics.Main" target="at.fhv.ssc.Logistics.Product">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5033050047214354" x="561.0384615384614" y="339.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

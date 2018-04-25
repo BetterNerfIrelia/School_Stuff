@@ -4,20 +4,20 @@ import javax.persistence.*;
 
 @Entity
 public class Userentry {
-    private int userid;
+    private String userid;
     private String fname;
     private String lname;
     private String password;
     private String level;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
-    public int getUserid() {
+    @Column(name = "USERID", nullable = false)
+
+    public String getUserid() {
         return userid;
     }
 
-    public void setUserid(int userid) {
+    public void setUserid(String userid) {
         this.userid = userid;
     }
 
@@ -61,6 +61,8 @@ public class Userentry {
         this.level = level;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -79,7 +81,10 @@ public class Userentry {
 
     @Override
     public int hashCode() {
-        int result = userid;
+
+        int result = 0;
+
+        result = 31 * result + (userid != null ? userid.hashCode() : 0);
         result = 31 * result + (fname != null ? fname.hashCode() : 0);
         result = 31 * result + (lname != null ? lname.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);

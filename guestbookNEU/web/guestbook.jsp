@@ -34,26 +34,35 @@
     <img src="FHV_Logo.jpg" alt="FHV_Logo" width="500">
   </header>
 
-  <nav>
-    <ul>
-      <li><a href=index>Home</a></li><br>
-      <li><a href=webapplikationen>Webapplikationen</a></li><br>
-      <li><a href=softwareentwicklung>Nutzerzentrierte Softwareentwicklung</a></li><br>
-      <li><a href=softwaresicherheit>Software und IT-Sicherheit</a></li><br>
-      <li><a href=bilder>Bilder</a></li>
-      <br>
-      <li><a href=registrieren>Registrieren</a></li>
-      <br>
-        <li><a href="guestbook">Gästebuch</a></li>
-        <br>
-        <li><a href="tabellen">Tabellen</a></li>
-        <br>
-      <li><a href="mailto:schiener5@hotmail.com?Subject=Hello%20there"><img src="Mail.jpg" alt="FHV_Logo" width="50"></a></li>
-      </p>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href=index>Home</a></li>
+            <br>
+            <li><a href=webapplikationen>Webapplikationen</a></li>
+            <br>
+            <li><a href=softwareentwicklung>Nutzerzentrierte Softwareentwicklung</a></li>
+            <br>
+            <li><a href=softwaresicherheit>Software und IT-Sicherheit</a></li>
+            <br>
+            <li><a href=bilder>Bilder</a></li>
+            <br>
+            <li><a href=registrieren>Registrieren</a></li>
+            <br>
+            <li><a href="guestbook">Gästebuch</a></li>
+            <br>
+            <li><a href="tabellen">Tabellen</a></li>
+            <br>
+            <li><a href="login">Login</a></li>
+            <br>
+            <li><a href="historie">Historie</a></li>
+            <br>
+            <li><a href="mailto:schiener5@hotmail.com?Subject=Hello%20there"><img src="Mail.jpg" alt="FHV_Logo" width="50px"></a></li>
+            <br>
+        </ul>
+    </nav>
 
-  <article>
+
+    <article>
     <h1>Gästebuch</h1>
 
     <a href = "/coursewebsite/neuerEintrag">

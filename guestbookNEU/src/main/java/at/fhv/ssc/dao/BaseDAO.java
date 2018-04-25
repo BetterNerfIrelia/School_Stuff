@@ -1,5 +1,6 @@
 package at.fhv.ssc.dao;
 
+import at.fhv.ssc.pojo.Fragebogen;
 import at.fhv.ssc.pojo.Guestentry;
 import at.fhv.ssc.pojo.Userentry;
 import org.hibernate.Session;
@@ -27,6 +28,7 @@ public abstract class BaseDAO<T,  PK extends Serializable> {
         conf.configure("hibernate.cfg.xml");
         conf.addAnnotatedClass(Guestentry.class);
         conf.addAnnotatedClass(Userentry.class);
+        conf.addAnnotatedClass(Fragebogen.class);
 
 
         StandardServiceRegistry sr = new StandardServiceRegistryBuilder().applySettings(conf.getProperties()).build();
